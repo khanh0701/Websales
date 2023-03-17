@@ -81,3 +81,7 @@ D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\EntityFramewor
 D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\EntityFramework.SqlServer.dll
 D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\EntityFramework.xml
 D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\EntityFramework.SqlServer.xml
+D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\PagedList.dll
+D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\PagedList.Mvc.dll
+D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\PagedList.xml
+D:\hoc tap\workspace\Đồ Án\DoAnCCMT\Webbanhang\Webbanhang\bin\PagedList.Mvc.xml

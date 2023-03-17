@@ -111,8 +111,8 @@ namespace Webbanhang.Controllers
         {
             List<GioHang> listGiohang = Laygiohang();
 
-            GioHang sanpham = listGiohang.SingleOrDefault(n => n.MaSP == id);
-            SanPham sp = data.SanPhams.Where(n => n.MaSP == sanpham.MaSP).FirstOrDefault();
+            GioHang sanpham = listGiohang.FirstOrDefault(n => n.MaSP == id);
+            SanPham sp = data.SanPhams.Where(n => n.MaSP == sanpham.MaSP).SingleOrDefault();
             if (sanpham != null)
             {
                 if (Convert.ToInt32(collection["txtSoLuong"]) <= sp.SoLuongTon)

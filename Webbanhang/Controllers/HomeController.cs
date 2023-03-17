@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using Webbanhang.Context;
 using Webbanhang.Models;
+using PagedList;
 
 namespace WebsiteBanHangs.Controllers
 {

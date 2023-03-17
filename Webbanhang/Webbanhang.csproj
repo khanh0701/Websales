@@ -52,6 +52,12 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -153,6 +159,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\anh\aokhoac1.png" />
+    <Content Include="Content\assets\anh\aokhoac2.png" />
+    <Content Include="Content\assets\anh\aokhoac3.png" />
+    <Content Include="Content\assets\anh\aokhoac4.png" />
+    <Content Include="Content\assets\anh\aokhoac5.png" />
+    <Content Include="Content\assets\anh\aosm1.png" />
+    <Content Include="Content\assets\anh\aosm2.png" />
+    <Content Include="Content\assets\anh\aosm3.png" />
+    <Content Include="Content\assets\anh\aosm4.png" />
+    <Content Include="Content\assets\anh\aothun1.png" />
+    <Content Include="Content\assets\anh\aothun2.png" />
+    <Content Include="Content\assets\anh\aothun3.png" />
+    <Content Include="Content\assets\anh\aothun4.png" />
+    <Content Include="Content\assets\anh\balo1.png" />
+    <Content Include="Content\assets\anh\balo2.png" />
+    <Content Include="Content\assets\anh\giay1.png" />
+    <Content Include="Content\assets\anh\giay2.png" />
+    <Content Include="Content\assets\anh\giay3.png" />
+    <Content Include="Content\assets\anh\giay4.png" />
+    <Content Include="Content\assets\anh\quandui1.png" />
+    <Content Include="Content\assets\anh\quandui2.png" />
+    <Content Include="Content\assets\anh\quandui3.png" />
+    <Content Include="Content\assets\anh\quandui4.png" />
+    <Content Include="Content\assets\anh\quankaki1.png" />
+    <Content Include="Content\assets\anh\quankaki2.png" />
+    <Content Include="Content\assets\anh\quankaki3.png" />
+    <Content Include="Content\assets\anh\quankaki4.png" />
+    <Content Include="Content\assets\anh\quantay1.png" />
+    <Content Include="Content\assets\anh\quantay2.png" />
+    <Content Include="Content\assets\anh\quantay3.png" />
+    <Content Include="Content\assets\anh\quantay4.png" />
     <Content Include="Content\assets\css\animate.css" />
     <Content Include="Content\assets\css\bootstrap.min.css" />
     <Content Include="Content\assets\css\flaticon_ecommerce.css" />
@@ -313,6 +349,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

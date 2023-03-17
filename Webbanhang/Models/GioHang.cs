@@ -10,7 +10,7 @@ namespace Webbanhang.Models
     public class GioHang
     {
         MyData data = new MyData();
-        public List<SanPham> ListSanPham { get; set; }
+       
         public int MaSP { get; set; }
 
 
