@@ -64,10 +64,10 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">các danh mục:</h6>
-                        <a class="collapse-item" href="@Url.Action("Index", "QuanLySanPham")">Sản Phẩm</a>
-                        <a class="collapse-item" href="@Url.Action("Index", "QuanLyTaiKhoan")">Tài Khoản</a>
-                        <a class="collapse-item" href="cards.html">Giỏ Hàng</a>
+                        <h6 class="collapse-header">Danh mục quản lý:</h6>
+                        <a class="collapse-item" href="@Url.Action("ListSanPham","QuanLySanPham","Admin")">Sản phẩm</a>
+                        <a class="collapse-item" href="@Url.Action("ListTaiKhoan","QuanLyTaiKhoan","Admin")">Tài Khoản</a>
+                        <a class="collapse-item" href=@Url.Action("ListDonHang","QuanLyDonHang","Admin")>Đơn hàng</a>
                     </div>
                 </div>
             </li>
@@ -373,7 +373,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Your Website 2023</span>
                     </div>
                 </div>
             </footer>
