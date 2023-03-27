@@ -12,7 +12,7 @@ namespace Webbanhang.Context
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SanPham()
         {
-            ChiTietDonHangs = new HashSet<ChiTietDonHang>();
+            ChiTietDonHang = new HashSet<ChiTietDonHang>();
         }
 
         [Key]
@@ -39,7 +39,7 @@ namespace Webbanhang.Context
         public int? MaNCC { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; }
+        public virtual ICollection<ChiTietDonHang> ChiTietDonHang { get; set; }
 
         public virtual LoaiSanPham LoaiSanPham { get; set; }
 

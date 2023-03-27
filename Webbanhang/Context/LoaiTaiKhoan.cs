@@ -12,7 +12,7 @@ namespace Webbanhang.Context
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LoaiTaiKhoan()
         {
-            TaiKhoans = new HashSet<TaiKhoan>();
+            TaiKhoan = new HashSet<TaiKhoan>();
         }
 
         [Key]
@@ -22,6 +22,6 @@ namespace Webbanhang.Context
         public string TenLoaiTK { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TaiKhoan> TaiKhoans { get; set; }
+        public virtual ICollection<TaiKhoan> TaiKhoan { get; set; }
     }
 }

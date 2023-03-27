@@ -18,7 +18,7 @@ namespace Webbanhang.Controllers
         
         public ActionResult PhanLoaiSanPham(int Id)
         {
-            var lstSanPham = data.SanPhams.Where(n => n.MaLoaiSP == Id).ToList();
+            var lstSanPham = data.SanPham.Where(n => n.MaLoaiSP == Id).ToList();
             return View(lstSanPham);
         }
     }

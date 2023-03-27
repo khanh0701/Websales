@@ -110,9 +110,8 @@ namespace Webbanhang.Controllers
         public ActionResult CapNhatGioHang(int id, FormCollection collection)
         {
             List<GioHang> listGiohang = Laygiohang();
-
-            GioHang sanpham = listGiohang.FirstOrDefault(n => n.MaSP == id);
-            SanPham sp = data.SanPhams.Where(n => n.MaSP == sanpham.MaSP).SingleOrDefault();
+            GioHang sanpham = listGiohang.SingleOrDefault(n => n.MaSP == id);
+            SanPham sp = data.SanPham.Where(n => n.MaSP == sanpham.MaSP).FirstOrDefault();
             if (sanpham != null)
             {
                 if (Convert.ToInt32(collection["txtSoLuong"]) <= sp.SoLuongTon)
@@ -166,7 +165,7 @@ namespace Webbanhang.Controllers
             //dh.HuyDH = false;
             dh.ThanhToan = false;
 
-            data.DonHangs.Add(dh);
+            data.DonHang.Add(dh);
             data.SaveChanges();
             foreach (var item in gh)
             {
@@ -175,10 +174,10 @@ namespace Webbanhang.Controllers
                 ctdh.MaSP = item.MaSP;
                 ctdh.SoLuong = item.soluong;
                 ctdh.Gia = (decimal)item.GiaBan;
-                s = data.SanPhams.Single(n => n.MaSP == item.MaSP);
+                s = data.SanPham.Single(n => n.MaSP == item.MaSP);
                 s.SoLuongTon -= ctdh.SoLuong;
                 data.SaveChanges();
-                data.ChiTietDonHangs.Add(ctdh);
+                data.ChiTietDonHang.Add(ctdh);
             }
             data.SaveChanges();
             //SendEmail();

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Webbanhang.Context.SanPham>
+
+@{
+    ViewBag.Title = "ListSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Danh sách sản phẩm </h2>
+
+<p>
+    @Html.ActionLink("Thêm sản phẩm", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Tên loại sản phẩm
+        </th>
+        <th>
+            Tên sản phẩm
+        </th>
+        <th>
+            Ngày cập nhật
+        </th>
+        <th>
+            Giá bán
+        </th>
+        <th>
+            Hình
+        </th>
+        <th>
+            Số lượng tồn
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.LoaiSanPham.TenLoaiSP)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenSP)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.NgayCapNhat)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.GiaBan)
+    </td>
+    <td>
+        <img src="@Html.DisplayFor(modelItem => item.Hinh)"
+             style="width:100px;" >
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SoLuongTon)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.MaSP }) |
+        @Html.ActionLink("Details", "Detail", new { id = item.MaSP }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.MaSP })
+    </td>
+</tr>
+}
+
+</table>

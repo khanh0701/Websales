@@ -12,7 +12,7 @@ namespace Webbanhang.Controllers
         MyData data = new MyData();
         public ActionResult Details(int Id)
         {
-            var lstSanPham = data.SanPhams.Where(n => n.MaSP == Id).FirstOrDefault();
+            var lstSanPham = data.SanPham.Where(n => n.MaSP == Id).FirstOrDefault();
             return View(lstSanPham);
         }
     }

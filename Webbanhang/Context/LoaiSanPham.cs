@@ -12,7 +12,7 @@ namespace Webbanhang.Context
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LoaiSanPham()
         {
-            SanPhams = new HashSet<SanPham>();
+            SanPham = new HashSet<SanPham>();
         }
 
         [Key]
@@ -25,6 +25,6 @@ namespace Webbanhang.Context
         public string anh { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SanPham> SanPhams { get; set; }
+        public virtual ICollection<SanPham> SanPham { get; set; }
     }
 }

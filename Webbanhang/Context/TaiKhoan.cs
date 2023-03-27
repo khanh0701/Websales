@@ -12,7 +12,7 @@ namespace Webbanhang.Context
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TaiKhoan()
         {
-            DonHangs = new HashSet<DonHang>();
+            DonHang = new HashSet<DonHang>();
         }
 
         [Key]
@@ -39,7 +39,7 @@ namespace Webbanhang.Context
         public DateTime? NgayTao { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DonHang> DonHangs { get; set; }
+        public virtual ICollection<DonHang> DonHang { get; set; }
 
         public virtual LoaiTaiKhoan LoaiTaiKhoan { get; set; }
     }

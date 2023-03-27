@@ -8,17 +8,17 @@ namespace Webbanhang.Context
     public partial class MyData : DbContext
     {
         public MyData()
-            : base("name=MyData2")
+            : base("name=MyData")
         {
         }
 
-        public virtual DbSet<ChiTietDonHang> ChiTietDonHangs { get; set; }
-        public virtual DbSet<DonHang> DonHangs { get; set; }
-        public virtual DbSet<LoaiSanPham> LoaiSanPhams { get; set; }
-        public virtual DbSet<LoaiTaiKhoan> LoaiTaiKhoans { get; set; }
-        public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
-        public virtual DbSet<SanPham> SanPhams { get; set; }
-        public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
+        public virtual DbSet<ChiTietDonHang> ChiTietDonHang { get; set; }
+        public virtual DbSet<DonHang> DonHang { get; set; }
+        public virtual DbSet<LoaiSanPham> LoaiSanPham { get; set; }
+        public virtual DbSet<LoaiTaiKhoan> LoaiTaiKhoan { get; set; }
+        public virtual DbSet<NhaCungCap> NhaCungCap { get; set; }
+        public virtual DbSet<SanPham> SanPham { get; set; }
+        public virtual DbSet<TaiKhoan> TaiKhoan { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -27,7 +27,7 @@ namespace Webbanhang.Context
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<DonHang>()
-                .HasMany(e => e.ChiTietDonHangs)
+                .HasMany(e => e.ChiTietDonHang)
                 .WithRequired(e => e.DonHang)
                 .WillCascadeOnDelete(false);
 
@@ -36,7 +36,7 @@ namespace Webbanhang.Context
                 .HasPrecision(18, 0);
 
             modelBuilder.Entity<SanPham>()
-                .HasMany(e => e.ChiTietDonHangs)
+                .HasMany(e => e.ChiTietDonHang)
                 .WithRequired(e => e.SanPham)
                 .WillCascadeOnDelete(false);
         }

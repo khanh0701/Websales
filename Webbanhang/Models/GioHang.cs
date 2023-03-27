@@ -45,7 +45,7 @@ namespace Webbanhang.Models
         public GioHang(int id)
         {
             MaSP = id;
-            SanPham sp = data.SanPhams.Single(n => n.MaSP == MaSP);
+            SanPham sp = data.SanPham.Single(n => n.MaSP == MaSP);
             TenSP = sp.TenSP;
             Hinh = sp.Hinh;
 
