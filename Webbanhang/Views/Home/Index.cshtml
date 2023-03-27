@@ -1,4 +1,5 @@
 ﻿@model  Webbanhang.Models.HomeModel
+
 @{ ViewBag.Title = "Home Page"; }
 
 
@@ -121,14 +122,14 @@
         </div>
         <div class="product-wrap">
             <div class="row">
-                @foreach (var item in Model.ListSanPham)
+                @foreach (var item in Model.ListSanPham.Take(8))
                 {
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                         <div class="product-item">
                             <div class="image">
 
                                 <img src="~/@item.Hinh" />
-                               
+
                                 <div class="tag new">New</div>
 
                             </div>
@@ -143,19 +144,23 @@
                                     <span>130</span>
                                 </div>
                                 <div class="price">
-                                    <span class="present-price">$@item.GiaBan</span>
+                                    <span class="present-price">@item.GiaBan đ</span>
                                     @*<del class="old-price">$@item.GiaBan</del>*@
                                 </div>
                                 <div class="shop-btn">
-                                    <a class="theme-btn-s2" href="@Url.Action("Details", "SanPham" , new {id = item.MaSP})">Mua Ngay
+                                    <a class="theme-btn-s2" href="@Url.Action("Details", "SanPham" , new {id = item.MaSP})">
+                                        Mua Ngay
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 }
-                    
+                <div class="more-btn">
+                    <a class="theme-btn-s2" href="~/LoaiSanPham/PhanLoaiSanPham/1">Xem thêm</a>
                 </div>
+
+            </div>
         </div>
     </div>
 </section>

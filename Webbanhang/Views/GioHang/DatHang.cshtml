@@ -73,7 +73,7 @@
                             </tr>
                             <br />
                         }
-                        @*@foreach (var item in Model)
+                        @foreach (var item in Model)
                         {
                             <div class="table-responsive">
                                 <table class="table table-hover">
@@ -84,22 +84,24 @@
                                             </td>
                                             <td>
                                                 <p class="title mb-0">@item.TenSP </p>
-                                                <var class="price text-muted">@item.GiaBan</var>
+                                                <var class="price text-muted">@item.GiaBan đ</var>
                                             </td>
-                                            <td> Số lượng: @ViewBag.Tongsoluong </td>
-                                            <td width="250">
-                                                Tổng tiền:
-                                                @String.Format("{0:0,0}", @ViewBag.Tongtien) VNĐ
 
-                                            </td>
                                         </tr>
 
                                     </tbody>
+
                                 </table>
                             </div>
 
-                        }*@
-                        </article>
+                        }
+                        <td> Số lượng: @ViewBag.Tongsoluong </td>
+                        <td width="250"><br />
+                            Tổng tiền:
+                            @String.Format("{0:0,0}", @ViewBag.Tongtien) đ
+
+                        </td>
+</article>
                 </div>
 
 

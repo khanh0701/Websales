@@ -305,6 +305,8 @@ C:\Users\Gia Phu\Websales\Webbanhang\bin\EntityFramework.SqlServer.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\Newtonsoft.Json.dll
+C:\Users\Gia Phu\Websales\Webbanhang\bin\PagedList.dll
+C:\Users\Gia Phu\Websales\Webbanhang\bin\PagedList.Mvc.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\System.Web.Helpers.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\System.Web.Mvc.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\System.Web.Optimization.dll
@@ -315,6 +317,8 @@ C:\Users\Gia Phu\Websales\Webbanhang\bin\System.Web.WebPages.Razor.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\WebGrease.dll
 C:\Users\Gia Phu\Websales\Webbanhang\bin\EntityFramework.xml
 C:\Users\Gia Phu\Websales\Webbanhang\bin\EntityFramework.SqlServer.xml
+C:\Users\Gia Phu\Websales\Webbanhang\bin\PagedList.xml
+C:\Users\Gia Phu\Websales\Webbanhang\bin\PagedList.Mvc.xml
 C:\Users\Gia Phu\Websales\Webbanhang\bin\System.Web.Helpers.xml
 C:\Users\Gia Phu\Websales\Webbanhang\bin\System.Web.Mvc.xml
 C:\Users\Gia Phu\Websales\Webbanhang\bin\System.Web.Optimization.xml

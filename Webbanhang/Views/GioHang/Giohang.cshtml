@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Webbanhang.Models.GioHang>
+
 @{
     ViewBag.Title = "Giohang";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -138,7 +139,7 @@
 
                             <div class="total">
                                 <h4>Thành tiền</h4>
-                                <span>@String.Format("{0:0,0}", @ViewBag.TongTien) VND</span>
+                                <span>@String.Format("{0:0,0}", @ViewBag.TongTien) đ</span>
                             </div>
 
                             <a class="theme-btn-s2" href="~/GioHang/DatHang">Đặt Hàng</a>
@@ -160,7 +161,7 @@
 
                             <div class="product-item">
                                 <div class="image">
-                                    <img src="*~/@item.Hinh*" alt="">
+                                    <img src="~/@item.Hinh" alt="">
                                     <div class="tag new">New</div>
                                     <ul class="cart-wrap">
                                         <li>

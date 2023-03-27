@@ -110,7 +110,6 @@ namespace Webbanhang.Controllers
         public ActionResult CapNhatGioHang(int id, FormCollection collection)
         {
             List<GioHang> listGiohang = Laygiohang();
-
             GioHang sanpham = listGiohang.SingleOrDefault(n => n.MaSP == id);
             SanPham sp = data.SanPham.Where(n => n.MaSP == sanpham.MaSP).FirstOrDefault();
             if (sanpham != null)
